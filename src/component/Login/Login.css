@@ -1,0 +1,83 @@
+ .all{
+    border-radius: 10px;
+    background-color: white;
+ }
+.col-md-4{
+    background-image: url(../image/Login\ bg.png);
+    background-size: cover;
+    border-radius: 10px;
+    /* background-position: center; */
+}
+.sign{
+    background-color: #2E3190;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding:10px 20px;
+}
+i{
+    margin: 10px; 
+    border:1px solid gray;
+    padding: 10px;
+    border-radius: 30%;
+
+}
+i:hover{
+   color: white;
+   background-color: black;
+   border-color: black;
+    
+}
+.ptext{
+    position: relative;
+}
+.ptext::before{
+    content: "";
+    position: absolute;
+    width: 20%;
+    padding: 2px;
+    right:60%;
+    transform: translatex(-50%);
+    top: 50%;
+    transform: translatey(-50%);
+    background-color:gray;
+}
+.signInContainer{
+    display: flex;
+}
+.ptext::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    padding: 2px;
+
+    left:60%;
+    transform: translatex(-50%);
+    top: 50%;
+    transform: translatey(-50%);
+    background-color:gray;
+}
+@media screen and (max-width : 683px){
+    .ptext::before{
+        content: "";
+        position: absolute;
+        width: 20%;
+        padding: 2px;
+        right:50%;
+        transform: translatex(-50%);
+       
+    }.ptext::after{
+        content: "";
+        position: absolute;
+        width: 20%;
+        padding: 2px;
+        left:70%;
+        transform: translatex(-50%);
+        
+        
+    }
+}
+.WelcomeContainer{
+    background-image: url(../image/Login\ bg.png);
+    display: none;
+}

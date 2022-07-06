@@ -1,0 +1,76 @@
+.all{
+    border-radius: 10px;
+    background-color: white;
+ }
+.col-md-4{
+    background-image: url(../image/Login\ bg.png);
+    background-size: cover;
+    border-radius: 10px;
+    /* background-position: center; */
+}
+.sign{
+    background-color: #2E3190;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding:10px 20px;
+}
+i{
+    margin: 10px; 
+    border:1px solid gray;
+    padding: 10px;
+    border-radius: 30%;
+
+}
+i:hover{
+   color: white;
+   background-color: black;
+   border-color: black;
+    
+}
+.signtext{
+    position: relative;
+}
+.signtext::before{
+    content: "";
+    position: absolute;
+    width: 15%;
+    padding: 2px;
+    right:70%;
+    transform: translatex(-50%);
+    top: 50%;
+    transform: translatey(-50%);
+    background-color:gray;
+}
+.signtext::after{
+    content: "";
+    position: absolute;
+    width: 15%;
+    padding: 2px;
+
+    left:70%;
+    transform: translatex(-50%);
+    top: 50%;
+    transform: translatey(-50%);
+    background-color:gray;
+}
+@media screen and (max-width : 683px){
+    .signtext::before{
+        content: "";
+        position: absolute;
+        width: 10%;
+        padding: 2px;
+        right:80%;
+        transform: translatex(-50%);
+       
+    }.signtext::after{
+        content: "";
+        position: absolute;
+        width: 10%;
+        padding: 2px;
+        left:90%;
+        transform: translatex(-50%);
+        
+        
+    }
+}
